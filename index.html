@@ -5,26 +5,31 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Abstract | Help Center</title>
+    <link rel="stylesheet" href="main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
 </head>
 <body>
     <nav class="navbar">
         <div class="logo">Abstract | <span>Help Center</span></div>
         <ul>
-            <li><a href="#">Submit</a></li>
-            <li><a href="#">Sign In</a></li>
+            <li><a href="#" id="submit">Submit a request</a></li>
+            <li><a href="#" id="signin">Sign In</a></li>
         </ul>
     </nav>
     <header class="header">
         <div class="hero">
             <h1>How can we help?</h1>
-            <div class="search">
+            <div class="herosearch">
+                <i id="arrow" class="fa-solid fa-arrow-right-long"></i>
                 <input type="search" placeholder="Search">
             </div>
         </div>
     </header>
     <div class="main">
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-object-subtract"></i>
             <div class="box">
                 <h1>Using Abstract</h1>
                 <p>Abstract lets you manage, version, and document your designs in one place.</p>
@@ -32,7 +37,7 @@
             </div>
         </div>
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-people-group"></i>
             <div class="box">
                 <h1>Manage prganizations, teams, and projects</h1>
                 <p>Use Abstract organizations, teams, and projects to organize your people and your work.</p>
@@ -40,7 +45,7 @@
             </div>
         </div>
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-puzzle-piece"></i>
             <div class="box">
                 <h1>Manage billing</h1>
                 <p>Change subscriptions and payment details</p>
@@ -48,7 +53,7 @@
             </div>
         </div>
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-sack-dollar"></i>
             <div class="box">
                 <h1>Authenticate to Abstract</h1>
                 <p>Set up and configure SSO, SCIM, and Just-in-Time provisioning</p>
@@ -56,7 +61,7 @@
             </div>
         </div>
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-key"></i>
             <div class="box">
                 <h1>Abstract support</h1>
                 <p>Get in touch with a human.</p>
@@ -64,7 +69,7 @@
             </div>
         </div>
         <div class="boxes">
-            <div class="icon"></div>
+            <i class="fa-solid fa-comment-dots"></i>
             <div class="box">
                 <h1>Using Abstract</h1>
                 <p>Abstract lets you manage, version, and document your designs in one place.</p>

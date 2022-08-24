@@ -1,0 +1,143 @@
+:root {
+    /* COLORS */
+    --LIGHTBLUE: #4c5fd5;
+    --BLACK: #000000;
+    --LIGHTGREY: #DADBF1;
+    --WHITE: #FFF;
+
+    --FF: 'Open Sans', sans-serif;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--FF);
+}
+
+
+.navbar {
+    display: flex;
+    flex: 1;
+    background-color: var(--BLACK);
+    color: var(--WHITE);
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    padding: 0 5%;
+}
+
+.navbar ul {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    text-decoration: none;
+}
+
+ .navbar li {
+    list-style-type: none;
+    padding: 0 30px;
+    text-decoration: none;
+}
+
+.navbar li a {
+    color: var(--WHITE);
+    font-size: 2em;
+    text-decoration: none;
+}
+
+#submit {
+    background-color: rgb(40, 40, 40);
+    border: 2px #fff solid;
+    padding: 6px 15px;
+    border-radius: 10px;
+}
+#signin {
+    background-color: var(--LIGHTBLUE);
+    padding: 8px 15px;
+    border-radius: 10px;
+}
+.logo {
+    color: var(--WHITE);
+    font-size: 2.3rem;
+    font-weight: 700;
+}
+
+.navbar .logo span {
+    font-size: 2rem;
+    cursor: pointer;
+}
+
+span:hover {
+    text-decoration: underline;
+}
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 600px;
+    background-color: var(--LIGHTGREY);
+}
+
+.hero h1 {
+    font-size: 6rem;
+    font-weight: 400;
+    padding-bottom: 25px;
+}
+
+.herosearch {
+    width: 55%;
+    padding-bottom: 60px;
+}
+
+.herosearch input {
+    width: 100%;
+    padding: 25px 30px;
+    /* margin: 30px; */
+    font-size: 2rem;
+    border-radius: 6px;
+    transition: 0.3s ease;
+    border-width: 2px;
+    outline: none;
+    cursor: pointer;
+    caret-color: dodgerblue;
+}
+
+.herosearch input:hover, .herosearch input:focus{
+    border: 2px dodgerblue solid;
+    box-shadow: 0 0 2px 0 dodgerblue;
+}
+
+input::placeholder {
+    font-size: 2rem;
+    display: inline-block;
+    vertical-align: middle;
+ }
+
+.herosearch .arrow {
+    color: red;
+}
+
+#arrow {
+    position: absolute;
+    font-size: 25px;
+    top: 438px;
+    right: 440px;
+}
+
+#arrow:hover, #arrow:focus {
+    color: dodgerblue;
+} 
+
+.main {
+    padding: 150px;
+    display: flex;
+}
+.boxes {
+    display: flex;
+}
