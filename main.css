@@ -9,6 +9,7 @@
 }
 html {
     scroll-behavior: smooth;
+    height: 100%;
 }
 
 * {
@@ -19,6 +20,9 @@ html {
 
 body {
     font-family: var(--FF);
+    display: flex;
+    flex-direction: column;
+    min-height: 100%;
 }
 
 
@@ -29,8 +33,8 @@ body {
     color: var(--WHITE);
     justify-content: space-between;
     align-items: center;
-    height: 100px;
-    padding: 0 5%;
+    height: 300px;
+    padding: 40px 5%;
 }
 
 .navbar ul {
@@ -51,6 +55,13 @@ body {
     color: var(--WHITE);
     font-size: 2em;
     text-decoration: none;
+}
+
+.navbar #menu {
+    display: none;
+}
+.navbar #mag {
+    display: none;
 }
 
 #submit {
@@ -180,7 +191,7 @@ input::placeholder {
     flex: 1;
     flex-wrap: wrap;
     height: 500px;
-    margin-bottom: 0;
+    margin-top: auto;
 }
 
 .blocks {
@@ -209,6 +220,7 @@ input::placeholder {
 @media(max-width: 1600px){
     
     .navbar {
+        position: relative;
         display: flex;
         flex-direction: column;
         width: 100%;
@@ -222,9 +234,11 @@ input::placeholder {
     .navbar ul {
         flex-direction: column;
         margin: auto;
+        display: none;
     }
 
     .navbar li {
+        display: inline-block;
         position: relative;
         padding: 40px;
         
@@ -245,12 +259,37 @@ input::placeholder {
     .hero h1 {
         font-size: 4rem;
     }
+    .navbar #menu {
+        display: block;
+        position: absolute;
+        cursor: pointer;
+        font-size: 3rem;
+        top: 65px;
+        right: 80px;
+    } 
+    .navbar #mag {
+        display: block;
+        position: absolute;
+        font-size: 3rem;
+        top: 65px;
+        right: 180px;
+    }
+    .showmenu {
+        display: block;
+    }
 }
 
-@media(max-width: 900px) {
+@media(max-width: 700px) {
 
     .hero h1 {
         font-size: 2.5rem;
     }
-
+    .navbar #menu{
+        display: none;
+    }
+    .navbar #mag{
+        display: none;
+    }
 }
+
+
